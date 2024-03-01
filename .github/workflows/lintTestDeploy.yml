@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: 18
       - name: Installdependencies
-        run: mpm ci
+        run: npm ci
       - name: lint
         run: eslint --ext .jsx --fix src
   test:
@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 18
       - name: Installdependencies
-        run: mpm ci
+        run: npm ci
       - name: test
         run: vitest run
   deploy: 
